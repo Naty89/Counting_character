@@ -1,4 +1,5 @@
 def chr_count():
+	# This function counts characters.
 	count = 0 
 	x = raw_input("put in a sentence:")
 	a = []
