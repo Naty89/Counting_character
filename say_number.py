@@ -4,6 +4,7 @@ def say_number():
 	h = {1:"one hundred", 2:"two hundred", 3:"three hundred", 4:"four hundred", 5:"five hundred", 6:"six hundred", 7:"eight hundred", 8:"eight hundred", 9:"nine hundred"}
 	th = {1:"one thousand", 2:"two thousand", 3:"three thousand", 4:"four thousand", 5:"five thousand", 6:"six thousand", 7:"seven thousand", 8:"eight thousand", 9:"nine thousand"}
 	m = {1:"one million", 2:"two million", 3:"three million", 4:"four million", 5:"five million", 6:"six million", 7:"seven million", 8:"eight million", 9:"nine million"}
+	b = {1:"one billion", 2:"two billion", 3:"three billion", 4:"four billion", 5:"five billion", 6:"six billion", 7:"seven billion", 8:"eight billion", 9:"nine billion"}
 	p = raw_input("Pick a number from 20 through 999,999,999 with no commas:")
 	for k in range(len(p)-1):
 		if len(p) == 1:
@@ -24,6 +25,12 @@ def say_number():
 			i = t[int(p[0])] + " " + m[int(p[1])] + " " + h[int(p[2])]+ " " + t[int(p[3])] + " " + th[int(p[4])] + " " + h[int(p[5])] + " " + t[int(p[6])] + " " + o[int(p[7])]
 		if len(p) == 9:
 			i = h[int(p[0])] + " " + t[int(p[1])] + " " + m[int(p[2])]+ " " + h[int(p[3])] + " " + t[int(p[4])] + " " + th[int(p[5])] + " " + h[int(p[6])] + " " + t[int(p[7])] + " " + o[int(p[8])]
+		if len(p) == 10:
+			i = b[int(p[0])] + " " + h[int(p[1])] + " " + t[int(p[2])] + " " + m[int(p[3])]+ " " + h[int(p[4])] + " " + t[int(p[5])] + " " + th[int(p[6])] + " " + h[int(p[7])] + " " + t[int(p[8])] + " " + o[int(p[9])]
+		if len(p) == 11:
+			i = t[int(p[0])] + " " + b[int(p[1])] + " " + h[int(p[2])] + " " + t[int(p[3])] + " " + m[int(p[4])]+ " " + h[int(p[5])] + " " + t[int(p[6])] + " " + th[int(p[7])] + " " + h[int(p[8])] + " " + t[int(p[9])] + " " + o[int(p[10])]
+		if len(p) == 12:
+			i = h[int(p[0])] + " " + t[int(p[1])] + " " + b[int(p[2])] + " " + h[int(p[3])] + " " + t[int(p[4])] + " " + m[int(p[5])]+ " " + h[int(p[6])] + " " + t[int(p[7])] + " " + th[int(p[8])] + " " + h[int(p[9])] + " " + t[int(p[10])] + " " + o[int(p[11])]
 	return i
 
 print(say_number())
