@@ -5,7 +5,7 @@ def say_number():
 	th = {1:"one thousand", 2:"two thousand", 3:"three thousand", 4:"four thousand", 5:"five thousand", 6:"six thousand", 7:"seven thousand", 8:"eight thousand", 9:"nine thousand"}
 	m = {1:"one million", 2:"two million", 3:"three million", 4:"four million", 5:"five million", 6:"six million", 7:"seven million", 8:"eight million", 9:"nine million"}
 	b = {1:"one billion", 2:"two billion", 3:"three billion", 4:"four billion", 5:"five billion", 6:"six billion", 7:"seven billion", 8:"eight billion", 9:"nine billion"}
-	p = raw_input("Pick a number from 20 through 999,999,999 with no commas:")
+	p = raw_input("Pick a number from 20 through 999,999,999,999 with no commas:")
 	for k in range(len(p)-1):
 		if len(p) == 1:
 			i = o[int(p[0])]
